@@ -4,6 +4,8 @@ Helper to create enums out of a 'sealed trait' and some 'case object's
 ### Usage
 ```scala
 
+import com.bryghts.enumeration.Enum
+
 sealed trait CardSuit
 
 object CardSuit extends Enum {
