@@ -1,0 +1,1 @@
+Index.PACKAGES = {"com" : [], "com.bryghts" : [], "com.bryghts.enumeration" : [{"class" : "com\/bryghts\/enumeration\/Enum.html", "name" : "com.bryghts.enumeration.Enum"}]};
