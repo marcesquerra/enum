@@ -34,7 +34,8 @@ abstract class Enum[E](implicit tt : ru.TypeTag[E]) {
     }
 
     private val valuesByName: Map[String, E] = genReverseEnum
+    val values:List[E] = valuesByName.map{case (_, v) => v}.toList
 
-    def valueByName(name: String):Option[E] = Option(name.trim.toLowerCase()).flatMap(valuesByName.get _)
+    def apply(name: String):Option[E] = Option(name.trim.toLowerCase()).flatMap(valuesByName.get _)
 
 }
