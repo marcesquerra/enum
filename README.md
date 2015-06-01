@@ -8,7 +8,7 @@ import com.bryghts.enumeration.Enum
 
 sealed trait CardSuit
 
-object CardSuit extends Enum {
+object CardSuit extends Enum[CardSuit] {
   case object Spades   extends CardSuit
   case object Hearts   extends CardSuit
   case object Diamonds extends CardSuit
