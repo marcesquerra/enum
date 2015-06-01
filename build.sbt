@@ -76,7 +76,7 @@ releaseProcess := Seq[ReleaseStep](
     setReleaseVersion,                            // : ReleaseStep
     commitReleaseVersion,                         // : ReleaseStep, performs the initial git checks
     tagRelease,                                   // : ReleaseStep
-    ReleaseStep(action = Command.process("publishSigned", _)),
+    ReleaseStep(action = Command.process("publishSigned", _), enableCrossBuild = true),
     setNextVersion,                               // : ReleaseStep
     commitNextVersion,                            // : ReleaseStep
     ReleaseStep(action = Command.process("sonatypeReleaseAll", _)),
