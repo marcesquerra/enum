@@ -27,7 +27,11 @@ CardSuit.all         // returns List(CardSuit.Spades, CardSuit.Hearts, CardSuit.
 ```
 ### SBT Dependency
 
+```sbt
+
 libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.2"
+
+```
 
 ### ScalaDoc
 http://marcesquerra.github.io/enum/latest/api/
