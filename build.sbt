@@ -3,7 +3,6 @@ import _root_.sbt.Project
 import _root_.sbtrelease.ReleaseStateTransformations
 import _root_.sbtrelease.ReleaseStateTransformations._
 import _root_.sbtrelease.ReleaseStep
-import SonatypeKeys._
 import sbtrelease._
 import ReleaseStateTransformations._
 import ReleaseKeys._
@@ -11,8 +10,6 @@ import xerial.sbt.Sonatype.SonatypeKeys
 import com.typesafe.sbt.SbtGit.{GitKeys => git}
 
 releaseSettings
-
-sonatypeSettings
 
 site.settings
 
@@ -34,7 +31,7 @@ crossScalaVersions := Seq("2.10.4", "2.11.6")
 
 publishMavenStyle := true
 
-profileName  := "com.bryghts"
+sonatypeProfileName  := "com.bryghts"
 
 libraryDependencies ++= Seq(
     "org.scala-lang" %  "scala-reflect"      % scalaVersion.value,
