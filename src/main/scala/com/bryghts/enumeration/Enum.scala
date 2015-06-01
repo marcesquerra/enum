@@ -7,7 +7,7 @@ import scala.reflect.runtime.{universe => ru}
  */
 abstract class Enum[E](implicit tt : ru.TypeTag[E]) {
 
-    val typeName = helpers.decodedTypeName(tt)
+    private val typeName = helpers.decodedTypeName(tt)
 
     private def genReverseEnum: Map[String, E] = {
         val o = Class.forName(tt.tpe.typeSymbol.asClass.fullName + "$")
