@@ -25,6 +25,9 @@ CardSuit("Bastos")   // returns None
 CardSuit.all         // returns List(CardSuit.Spades, CardSuit.Hearts, CardSuit.Diamonds, CardSuit.Clubs)
 
 ```
+### SBT Dependency
+
+libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.2"
 
 ### ScalaDoc
 http://marcesquerra.github.io/enum/latest/api/
