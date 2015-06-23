@@ -22,14 +22,14 @@ This adds to the CardSuit object this capabilities:
 
 CardSuit("Spades")   // returns Some(CardSuit.Spades)
 CardSuit("Bastos")   // returns None
-CardSuit.all         // returns List(CardSuit.Spades, CardSuit.Hearts, CardSuit.Diamonds, CardSuit.Clubs)
+CardSuit.values      // returns Set(CardSuit.Spades, CardSuit.Hearts, CardSuit.Diamonds, CardSuit.Clubs)
 
 ```
 ### SBT Dependency
 
 ```sbt
 
-libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.2"
+libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.3"
 
 ```
 
