@@ -7,7 +7,7 @@ import scala.reflect.runtime.{universe => ru}
  */
 abstract class Enum[E](implicit tt : ru.TypeTag[E]) {
 
-    private val typeName = helpers.decodedTypeName(tt)
+    val typeName = helpers.decodedTypeName(tt)
 
     private val valuesByName: Map[String, E] = {
         import scala.reflect.runtime.universe._
