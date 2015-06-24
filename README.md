@@ -29,7 +29,7 @@ CardSuit.values      // returns Set(CardSuit.Spades, CardSuit.Hearts, CardSuit.D
 
 ```sbt
 
-libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.3"
+libraryDependencies += "com.bryghts.enum" %% "enum" % "0.1.4"
 
 ```
 
