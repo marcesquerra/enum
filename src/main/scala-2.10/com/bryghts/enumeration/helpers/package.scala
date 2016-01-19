@@ -15,4 +15,6 @@ package object helpers {
 
         classMirror.symbol.companionSymbol.asModule
     }
+
+    type Context = scala.reflect.macros.Context
 }
