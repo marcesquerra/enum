@@ -2,14 +2,11 @@ import _root_.sbt.Keys._
 import _root_.sbt.Project
 import _root_.sbtrelease.ReleaseStateTransformations
 import _root_.sbtrelease.ReleaseStateTransformations._
-import _root_.sbtrelease.ReleaseStep
 import sbtrelease._
 import ReleaseStateTransformations._
 import ReleaseKeys._
 import xerial.sbt.Sonatype.SonatypeKeys
 import com.typesafe.sbt.SbtGit.{GitKeys => git}
-
-releaseSettings
 
 site.settings
 
