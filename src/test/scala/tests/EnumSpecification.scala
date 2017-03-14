@@ -6,11 +6,8 @@ import com.bryghts.enumeration._
 
 trait Palo
 
-object Tmp {
-val tmp = enumMetadataForEnum[Palo]
-}
 
-object Palo extends Enum[Palo](Tmp.tmp) {
+object Palo extends Enum[Palo] {
     case object Oros       extends Palo
     case object Bastos     extends Palo
     case object Espadas    extends Palo
